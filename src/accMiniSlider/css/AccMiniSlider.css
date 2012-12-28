@@ -1,0 +1,42 @@
+
+.accMiniSliderContainer {
+    overflow: hidden;
+    position: relative;
+}
+
+.accMiniSliderImage {
+    float: left;
+    margin: 0 auto;
+}
+
+.accMiniSliderControl {
+    display: block;
+    width: 39px;
+    height: 100%;
+    text-indent: -10000px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.accMiniSliderControl:hover {
+    opacity: 1;
+}
+
+.accMiniSliderInner {
+    float: left;
+}
+
+.accMiniSliderLeftControl {
+    top: 0;
+    left: 0;
+    background: transparent url(../gfx/control_left.png) no-repeat 0 0;
+    background-position: center center;
+}
+
+.accMiniSliderRightControl {
+    top: 0;
+    right: 0;
+    background: transparent url(../gfx/control_right.png) no-repeat 0 0;
+    background-position: center center;
+}

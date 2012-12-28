@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.1/jquery.fancybox.pack.js"></script>
+    <script src="../src/accMiniSlider/jquery.AccMiniSlider.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.1/jquery.fancybox.css" rel="stylesheet">
+    <link href="../src/accMiniSlider/css/AccMiniSlider.css" rel="stylesheet">
+    <style>
+
+        .sliderStyle {
+            margin: 0 auto;
+            width: 200px;
+            height: 150px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <br/>
+    <h1>Static, loop</h1>
+    <div class="thumbnail sliderStyle">
+        <div id="slider1" class="sliderStyle">
+            <div><a href="./example1.jpg" class="fancybox" rel="slider1"><img src="./example1_min.jpg"></a></div>
+            <div><a href="./example2.jpg" class="fancybox" rel="slider1"><img src="./example2_min.jpg"></a></div>
+            <div><a href="./example3.jpg" class="fancybox" rel="slider1"><img src="./example3_min.jpg"></a></div>
+        </div>
+    </div>
+    <br/>
+    <h1>Static, no loop</h1>
+    <div class="thumbnail sliderStyle">
+        <div id="slider2" class="sliderStyle">
+            <div><a href="./example1.jpg" class="fancybox" rel="slider1"><img src="./example1_min.jpg"></a></div>
+            <div><a href="./example2.jpg" class="fancybox" rel="slider1"><img src="./example2_min.jpg"></a></div>
+            <div><a href="./example3.jpg" class="fancybox" rel="slider1"><img src="./example3_min.jpg"></a></div>
+        </div>
+    </div>
+    <br/>
+    <h1>Auto play 2s, loop</h1>
+    <div class="thumbnail sliderStyle">
+        <div id="slider3" class="sliderStyle">
+            <div><a href="./example1.jpg" class="fancybox" rel="slider1"><img src="./example1_min.jpg"></a></div>
+            <div><a href="./example2.jpg" class="fancybox" rel="slider1"><img src="./example2_min.jpg"></a></div>
+            <div><a href="./example3.jpg" class="fancybox" rel="slider1"><img src="./example3_min.jpg"></a></div>
+        </div>
+    </div>
+    <br/>
+    <h1>Auto play 3s, no loop</h1>
+    <div class="thumbnail sliderStyle">
+        <div id="slider4" class="sliderStyle">
+            <div><a href="./example1.jpg" class="fancybox" rel="slider1"><img src="./example1_min.jpg"></a></div>
+            <div><a href="./example2.jpg" class="fancybox" rel="slider1"><img src="./example2_min.jpg"></a></div>
+            <div><a href="./example3.jpg" class="fancybox" rel="slider1"><img src="./example3_min.jpg"></a></div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $('#slider1').accMiniSlider({loop: true});
+        $('#slider2').accMiniSlider();
+        $('#slider3').accMiniSlider({loop: true, autoPlay: true, autoPlayTime: 2000});
+        $('#slider4').accMiniSlider({autoPlay: true, autoPlayTime: 3000});
+        $('.fancybox').fancybox();
+    </script>
+
+
+</body>
+</html>
